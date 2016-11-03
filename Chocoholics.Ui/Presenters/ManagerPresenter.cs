@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Chocoholics.Reports;
 using Chocoholics.Ui.Views;
-using Chocoholics.Business;
-using Chocoholics.Reports;
+using System;
+using System.Threading.Tasks;
 
 namespace Chocoholics.Ui.Presenters
 {
@@ -17,13 +13,14 @@ namespace Chocoholics.Ui.Presenters
         {
             _view = view;
 
+            //here is test 
             // subscribe to events from view.
             _view.ActiveMemberInstructionsRequested += _view_ActiveMemberInstructionsRequested;
             _view.ActiveProviderInstructionsRequested += _view_ActiveProviderInstructionsRequested;
             _view.FetchRequestedReport += _view_FetchRequestedReport;
         }
 
-    
+
         private async void _view_FetchRequestedReport(object sender, EventArgs e)
         {
             int inputInteger;
@@ -41,8 +38,8 @@ namespace Chocoholics.Ui.Presenters
                         amrInput = "";
                     ActiveMemberReport amr = new ActiveMemberReport();
                     _view.OutputText = "Running Report(s)...";
-                    
-                    if(int.TryParse(amrInput, out inputInteger))
+
+                    if (int.TryParse(amrInput, out inputInteger))
                         _view.OutputText = amr.RunReport(inputInteger);
                     else
                         _view.OutputText = amr.RunReport(amrInput);
