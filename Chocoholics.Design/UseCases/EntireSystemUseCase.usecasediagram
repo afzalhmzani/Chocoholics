@@ -1,0 +1,649 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="3fa9f4e1-db9c-46f4-a72e-7952add7785c" name="EntireSystemUseCase" linkedPackageId="cdc9a86e-6834-477c-a190-f1ccaa6a4c1e" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="90c6890a-bee6-4156-a60d-2d89ba4c1c0f" name="Provider" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7324fdc3-209a-4d8e-8367-f4f8ba64eb5d" />
+        <targetEnds>
+          <association Id="90a0f099-a2f1-4909-b767-c6143d4e0b31" isDerived="false" sourceEndRoleName="Provider" targetEndRoleName="Verify Member Number" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="48670eed-91cf-4230-ba68-103410e5889a" LastKnownName="UC5 - Verify Member Number" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ae57b568-09cc-4175-8a95-d11631f8d278" name="Provider" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="446295a6-c475-4c7b-bfdc-a89ed88ad1a6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="557412ad-cdd1-479d-b954-307b7c324f94" name="Verify Member Number" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c3ef4cd5-068b-43a5-ae5c-ce98f2de4919" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bce2bcbf-02d4-40fb-a302-f9ae9b2f9f6a" />
+          </association>
+          <association Id="1f70afa6-2471-4e84-9366-3afcf4d2a5b1" isDerived="false" sourceEndRoleName="Provider" targetEndRoleName="Request Provider Directory" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6742fb5e-abf2-400f-b1eb-354d994c926d" LastKnownName="UC20 - Request Provider Directory" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2321555b-5dd4-4583-84b8-2e259de1deb6" name="Provider" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="be6be5aa-fb4a-4037-98f4-826df61c3e36" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="617383db-4170-4459-af9e-0bbd02da39b4" name="Request Provider Directory" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5d1b3cfd-036c-4e7f-98cc-404f022e507c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4a51b041-01ff-4fd1-8f68-1c871157f4b2" />
+          </association>
+          <association Id="35384b1e-65ae-4d0e-8b5a-e44d42c42b8b" isDerived="false" sourceEndRoleName="Provider" targetEndRoleName="Bill ChocAn for services provided" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="45dac827-9695-4ef9-81c7-1b8d241a3288" LastKnownName="UC21 - Bill ChocAn for services provided" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fa6c5585-51c5-412b-876f-c7c3cfb229da" name="Provider" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d25083c2-ad6f-4891-bc2a-dffcd1f73766" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cd7a5011-d32e-4184-9619-bd6ae2b9b90c" name="Bill ChocAn for services provided" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="67bf44ce-af2e-4456-836f-60c1086dd9f7" name="Lower" value="1">
+                      <elementDefinition Id="879df9ba-7c81-4b3c-9eb9-815c9fe58fbd" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="ec362a18-c1c8-4575-88c9-777934f91a21" name="Upper" value="1">
+                      <elementDefinition Id="5ac746cd-1596-4400-a33a-72ca92924571" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="f85320f1-e58c-46aa-86ec-8838eca21d13" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="76af5ee9-fe9c-4922-80d2-b1f3bb134195" />
+          </association>
+          <association Id="6428485b-796a-4039-be7e-ae293fff76b0" isDerived="false" sourceEndRoleName="Provider" targetEndRoleName="UC6 - Verify Provider Number" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="bd61b81f-19d3-452c-9f90-a81bb10d74a1" LastKnownName="UC6 - Verify Provider Number" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cb7067db-6492-46c8-8f2d-1ca09df29ef3" name="Provider" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="604ab5e3-6216-4bda-9b3b-7c567ca255af" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d3375746-3de4-4d10-a077-b78d4f7c622e" name="UC6 - Verify Provider Number" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="84441ce4-a0ab-49cb-b51e-fbf4bde7a400" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3f6478a9-18f9-4872-9ee0-275382ed9392" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="48670eed-91cf-4230-ba68-103410e5889a" name="UC5 - Verify Member Number" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2acf1557-c6fb-48e6-9d14-a6f9dbfda1ad" />
+        <subjects>
+          <subsystemMoniker Id="0a4e85dc-18bd-4679-aef1-f6261866b1de" LastKnownName="ChocAn Data Center Application" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="018f6872-da08-48a9-b731-34405ec3b1e9" name="ChocAn Member" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3dd9307d-ecc1-4643-a5cc-54845fd473a5" />
+        <targetEnds>
+          <association Id="6b7601ac-045d-4a00-b9af-9fb926c6b58a" isDerived="false" sourceEndRoleName="Chocoholic" targetEndRoleName="Verify Member Number" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="48670eed-91cf-4230-ba68-103410e5889a" LastKnownName="UC5 - Verify Member Number" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f456d65f-e303-45a9-a744-867ded4265c8" name="Chocoholic" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ad6db103-c444-4f08-bbc0-ee2b43a14e58" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e778f1e6-79b3-4dfb-8e01-b7649160dbf5" name="Verify Member Number" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="618b5250-f58a-4b96-afc2-b9b7d29f847f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5226a6d4-630e-463a-88ac-2a473489dda1" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="0a4e85dc-18bd-4679-aef1-f6261866b1de" name="ChocAn Data Center Application" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3ff1ca9e-b1f4-4ced-80e8-41ed9665f31b" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="0a63f6b3-795d-47da-aff0-50300db9853f" name="UC23 - Administer Members" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0de67598-9c8a-4af3-9829-c5054e6f47d9" />
+        <additions>
+          <include Id="57229fae-3404-4cd7-a44b-ab541434f595">
+            <useCaseMoniker Id="0f9f3022-9012-4f4a-8c52-029eb5c5ea9a" LastKnownName="UC17 - Add" />
+            <elementDefinition Id="1ba4dff4-d72f-43b5-a61f-8d464fb91754" />
+          </include>
+          <include Id="77792c01-189d-47a2-a80e-ee8965a64fb1">
+            <useCaseMoniker Id="d5ebc842-fd1e-4b89-9b76-7f4f0d3aa25d" LastKnownName="UC18 - Update" />
+            <elementDefinition Id="ba489423-120d-4117-af30-db43f2c5f933" />
+          </include>
+          <include Id="f1ea0e92-8b92-4b08-95f0-f8c539ae17fa">
+            <useCaseMoniker Id="5e95e7bd-0bc0-4f0f-88e0-96dca60f78c3" LastKnownName="UC19 - Deactivate" />
+            <elementDefinition Id="aa20661d-4bb5-4548-ad2c-2a7f33790213" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="0a4e85dc-18bd-4679-aef1-f6261866b1de" LastKnownName="ChocAn Data Center Application" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="45dac827-9695-4ef9-81c7-1b8d241a3288" name="UC21 - Bill ChocAn for services provided" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c512b45b-b388-48e2-9e9b-67afbd267cf2" />
+        <additions>
+          <include Id="ca3fbe63-933a-4ff6-8760-a426f26348d4">
+            <useCaseMoniker Id="be1a75af-57dc-46f1-96e0-e281dbdb5214" LastKnownName="UC3 - Look up service code and display service name" />
+            <elementDefinition Id="91c7b416-ab37-427f-a14a-750169ebed10" />
+          </include>
+          <include Id="e1cadb8d-ee4b-47ec-acd7-62d9162f1992">
+            <useCaseMoniker Id="3f7ad69c-0709-49c6-8795-7bc161f33cdf" LastKnownName="UC4 - Look up and display fee to pay" />
+            <elementDefinition Id="63bd54bb-ce2c-43e1-b61e-3014b0ef9ebc" />
+          </include>
+          <include Id="465ef4c3-58d4-4948-a2c9-33620546f052">
+            <useCaseMoniker Id="48670eed-91cf-4230-ba68-103410e5889a" LastKnownName="UC5 - Verify Member Number" />
+            <elementDefinition Id="c9785ef5-eaf0-4d4a-b798-da2791d38f00" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="0a4e85dc-18bd-4679-aef1-f6261866b1de" LastKnownName="ChocAn Data Center Application" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="be1a75af-57dc-46f1-96e0-e281dbdb5214" name="UC3 - Look up service code and display service name" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0685ed5d-1d4c-48e9-ba39-246bec3ff680" />
+        <subjects>
+          <subsystemMoniker Id="0a4e85dc-18bd-4679-aef1-f6261866b1de" LastKnownName="ChocAn Data Center Application" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="3f7ad69c-0709-49c6-8795-7bc161f33cdf" name="UC4 - Look up and display fee to pay" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6f412b87-fb0c-42ca-815e-c0dd0cb339e1" />
+        <subjects>
+          <subsystemMoniker Id="0a4e85dc-18bd-4679-aef1-f6261866b1de" LastKnownName="ChocAn Data Center Application" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="6742fb5e-abf2-400f-b1eb-354d994c926d" name="UC20 - Request Provider Directory" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8aaf558e-ca71-4878-94cb-6a4420cfedd8" />
+        <additions>
+          <include Id="0b9ab0e3-d059-44c7-8f4e-31114dd564b1">
+            <useCaseMoniker Id="3bb24c8f-d47f-453b-a82d-1648b8f8c43e" LastKnownName="UC1 - Create directory" />
+            <elementDefinition Id="571986c6-0e5a-49a8-b3e3-f6029205da2b" />
+          </include>
+          <include Id="c4263b19-92cf-4174-b17e-518e61cf202f">
+            <useCaseMoniker Id="87201fda-e4b5-4cb6-bb99-098cf7afa507" LastKnownName="UC2 - Email report" />
+            <elementDefinition Id="79426102-6fee-474f-b04a-02359cf55f38" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="0a4e85dc-18bd-4679-aef1-f6261866b1de" LastKnownName="ChocAn Data Center Application" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="3bb24c8f-d47f-453b-a82d-1648b8f8c43e" name="UC1 - Create directory" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bf4c5167-6d87-4854-9d99-2e33033850f3" />
+        <subjects>
+          <subsystemMoniker Id="0a4e85dc-18bd-4679-aef1-f6261866b1de" LastKnownName="ChocAn Data Center Application" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="87201fda-e4b5-4cb6-bb99-098cf7afa507" name="UC2 - Email report" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="953db292-031d-4c08-818a-79fea6247c6d" />
+        <subjects>
+          <subsystemMoniker Id="0a4e85dc-18bd-4679-aef1-f6261866b1de" LastKnownName="ChocAn Data Center Application" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="b607763b-6b3d-43b8-979e-3b4cbce34144" name="ChocAn manager" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b9a16738-66d2-4052-8e02-1d5cf8b04e39" />
+        <targetEnds>
+          <association Id="dbe3f0ee-ef79-4000-87a5-ca89a2782384" isDerived="false" sourceEndRoleName="ChocAn manager" targetEndRoleName="Run active member report and email member" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b150ed03-8d11-44d8-87eb-48f5ff860fc8" LastKnownName="UC11 - Run active member report and email member" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="02171f18-196f-4930-b855-517dc7e58e39" name="ChocAn manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="334f5770-6376-4b8c-9594-315eae650f82" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e70234bb-5e59-4f99-b32c-b3d429906e4b" name="Run active member report and email member" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c36659ae-4293-4c37-a7c3-788f2d99de86" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e60a6b3f-f71b-44d0-a42c-883c7a47b88e" />
+          </association>
+          <association Id="bcea6ed0-d33a-4eb4-a8b8-2103e9420b79" isDerived="false" sourceEndRoleName="ChocAn manager" targetEndRoleName="Run active provider report and email provider" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d406c8fb-fcb9-4ec4-9480-505230ad5637" LastKnownName="UC12 - Run active provider report and email provider" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fe45e795-21f3-4ec4-a30c-6d3299c35b5b" name="ChocAn manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="765d6938-c73d-4c95-9986-6c55daade622" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="83397f37-3834-4e64-b1cf-997bf8b918c1" name="Run active provider report and email provider" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6d190734-7ee4-44f0-a79a-82dc918388df" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a6959714-a289-4d14-aeaf-36e390c9282a" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="082f1e87-cec9-4251-85d6-445583ba2ae1" name="UC24 - Run weekly reports" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8026fa23-c990-406e-91d5-8aaae0e001d6" />
+        <additions>
+          <include Id="02a2d629-2bd6-4fca-af03-d0202a662fd3">
+            <useCaseMoniker Id="b150ed03-8d11-44d8-87eb-48f5ff860fc8" LastKnownName="UC11 - Run active member report and email member" />
+            <elementDefinition Id="7125f1bc-2874-46cb-87e1-b1e80d97e693" />
+          </include>
+          <include Id="40b88d5e-d4d9-45ac-b636-ac2a413be857">
+            <useCaseMoniker Id="d406c8fb-fcb9-4ec4-9480-505230ad5637" LastKnownName="UC12 - Run active provider report and email provider" />
+            <elementDefinition Id="59333552-1d9c-4ff3-bc89-f29eb381d569" />
+          </include>
+          <include Id="7fbc2ca4-c8b0-4818-8244-e1add47262d5">
+            <useCaseMoniker Id="50002be3-62be-4d6b-ab3c-700ae5391684" LastKnownName="UC13 - Run summary report" />
+            <elementDefinition Id="ccc14433-af1f-4831-ba37-0664431176ae" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="0a4e85dc-18bd-4679-aef1-f6261866b1de" LastKnownName="ChocAn Data Center Application" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="5db0efc2-2248-4adc-8150-1b301cbcc839" name="ChocAn System" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b39888ee-2799-4486-8736-26bdc10b7fae" />
+        <targetEnds>
+          <association Id="ca316a37-6431-41b2-b9ab-89eb3564d841" isDerived="false" sourceEndRoleName="ChocAn System" targetEndRoleName="Run weekly reports" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="082f1e87-cec9-4251-85d6-445583ba2ae1" LastKnownName="UC24 - Run weekly reports" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9543fdad-fec5-43bf-9c02-d6eceb9cc0f2" name="ChocAn System" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="36d132d1-ee44-4a38-ac6e-daa76fff9185" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="95b1e775-7b0e-48ee-a315-89d42b01f052" name="Run weekly reports" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d0f70abd-4a86-447a-b7da-409e7da638e5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="799bb8a5-381a-45ed-95cf-fbe0d5c28a38" />
+          </association>
+          <association Id="ed4a6e77-bed8-4ed3-b9a4-90b92a165124" isDerived="false" sourceEndRoleName="ChocAn System" targetEndRoleName="Create EFT data" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="788fd4ca-029c-465b-ac72-24748f6ec52a" LastKnownName="UC10 - Create EFT data" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="29600f8f-22ab-4284-8cdb-efb4de746fe7" name="ChocAn System" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f4697dce-08f8-4cfe-a554-e5fbe1ecee21" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7095d3b0-2a72-4555-982b-d4f95d99fe9e" name="Create EFT data" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="64e2f8d1-24b5-4ddf-894a-8dc66763de64" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2b02d252-57d6-4c41-9259-f78e68e0d0de" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="b150ed03-8d11-44d8-87eb-48f5ff860fc8" name="UC11 - Run active member report and email member" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="99078def-396c-44da-bd7d-2b2dc04af37b" />
+        <targetEnds>
+          <association Id="45d93153-918b-4899-82cb-7c3dbb509757" isDerived="false" sourceEndRoleName="Run active member report and email member" targetEndRoleName="ChocAn Member" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="0586a269-8dee-4316-a560-904d555f67c6" LastKnownName="ChocAn Member" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6886a2e8-a87d-43ed-b7a2-e02910484ce8" name="Run active member report and email member" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7cb254fc-c4f4-460d-86d5-4b781934e8cb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f589dca7-4f7f-4448-87d4-344eb5600746" name="ChocAn Member" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="be17f2e9-b5ca-480a-9546-865a6e67f960" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3ea5a991-2f91-484f-ad0e-1f3a8b733438" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="0a4e85dc-18bd-4679-aef1-f6261866b1de" LastKnownName="ChocAn Data Center Application" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="d406c8fb-fcb9-4ec4-9480-505230ad5637" name="UC12 - Run active provider report and email provider" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b79860e8-a6f2-4cb2-a4a6-e67f10ed6eb0" />
+        <targetEnds>
+          <association Id="a31b9392-a321-458d-8c6e-d80702220cec" isDerived="false" sourceEndRoleName="Run active provider report and email provider" targetEndRoleName="ChocAn Provider" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="f9363ab9-24c6-4d10-9e95-79332098d6b6" LastKnownName="ChocAn Provider" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1e70d518-b7e5-41c0-ac1e-8a4765f34d05" name="Run active provider report and email provider" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="969d4c07-649b-40ec-97cb-bb3d3ce0ca4f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3c43422e-2c20-4c2d-ba3f-bc1cc9dce42e" name="ChocAn Provider" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="82f9a29b-ee8e-4866-bce2-39451d9c720d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="17fa2274-b553-475d-b191-1cc862252bf2" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="0a4e85dc-18bd-4679-aef1-f6261866b1de" LastKnownName="ChocAn Data Center Application" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="788fd4ca-029c-465b-ac72-24748f6ec52a" name="UC10 - Create EFT data" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="df28b28a-bd7d-48af-8936-a6ba6b6e964f" />
+        <subjects>
+          <subsystemMoniker Id="0a4e85dc-18bd-4679-aef1-f6261866b1de" LastKnownName="ChocAn Data Center Application" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="50002be3-62be-4d6b-ab3c-700ae5391684" name="UC13 - Run summary report" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="210f6291-66e7-4ac9-bec3-bcf19e401eff" />
+        <subjects>
+          <subsystemMoniker Id="0a4e85dc-18bd-4679-aef1-f6261866b1de" LastKnownName="ChocAn Data Center Application" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="89bbb547-c1db-4339-acd7-c697941e55c5" name="Accounts Payable manager" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7fb27a3c-5316-49e2-a3d5-40fe5e3d3b18" />
+        <targetEnds>
+          <association Id="7c913a9d-62ef-4787-8108-2c9bd6c695dd" isDerived="false" sourceEndRoleName="AccountsPayable manager" targetEndRoleName="Run summary report" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="50002be3-62be-4d6b-ab3c-700ae5391684" LastKnownName="UC13 - Run summary report" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d6d2bf2a-d8a1-409a-9fe2-d55d0e11f460" name="AccountsPayable manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e2657995-3a6b-4df0-969b-778744afe739" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="16f9a507-3858-43be-8018-bb61af783f4a" name="Run summary report" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="17620944-70b0-41de-ae63-b5238a83b85b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cd916088-2c47-4596-b420-afe188c4554a" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="e5aca0b3-923f-45de-ba73-3f79e337acf9" name="Operator" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="297939a3-d515-4198-89d6-de6b4583c5cc" />
+        <targetEnds>
+          <association Id="d785b7e6-729b-4427-a6d8-5d296c9a6d6f" isDerived="false" sourceEndRoleName="Operator" targetEndRoleName="Administer Providers" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="29c0a287-a6a8-4fdb-8a89-69a9911f2e22" LastKnownName="UC22 - Administer Providers" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b4b48078-7fb3-40d0-8d5c-179bf100bfc8" name="Operator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5f0a10c4-6118-4346-bd08-c0e0b222a0bc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="050be4f7-ff19-4e93-98e6-aabbdb1ab409" name="Administer Providers" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f170481e-b28d-4112-8349-9c9c7bbf0701" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="74aa1a02-c807-49ad-b797-c5ecbf495d53" />
+          </association>
+          <association Id="5fb69e24-1ae8-455c-ba28-30f909808380" isDerived="false" sourceEndRoleName="Operator" targetEndRoleName="Administer Members" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0a63f6b3-795d-47da-aff0-50300db9853f" LastKnownName="UC23 - Administer Members" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e7d6e4e5-fa14-4235-96b6-6470ce7a0f03" name="Operator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="259db938-cb78-4db1-b2b4-103cd0d8f25a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b0d09720-e7c8-460c-a720-f955d5e21cc9" name="Administer Members" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2515e22c-e08a-4205-93d8-d1024bffadc7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b69dd43b-9e62-4d96-a79c-c3ffc2dfdf0b" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="29c0a287-a6a8-4fdb-8a89-69a9911f2e22" name="UC22 - Administer Providers" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a07b5bdc-88d9-481b-a05c-e52713f91798" />
+        <additions>
+          <include Id="d86cdca6-e3b8-4a46-9d2d-d00ed73bd2b2">
+            <useCaseMoniker Id="2a80499c-0298-4e1a-a7af-83f0fc464826" LastKnownName="UC14 - Add" />
+            <elementDefinition Id="efbe2c0e-da4c-4a99-b7f0-fc60758f9d4a" />
+          </include>
+          <include Id="df77d0b7-1f18-43eb-8c8c-fab37b4a0bc0">
+            <useCaseMoniker Id="21ffd103-8ded-45c4-bc64-2172ce437c82" LastKnownName="UC15 - Update" />
+            <elementDefinition Id="ab6e5dde-c871-4cf2-ac22-d18aa6c5e44f" />
+          </include>
+          <include Id="26522e26-07ed-44a6-9a7e-7eec2b79b249">
+            <useCaseMoniker Id="6e7f0138-e0cf-4a19-bc58-ffe013f58db9" LastKnownName="UC16 - Deactivate" />
+            <elementDefinition Id="14f823cc-1972-454f-8014-3b0e62f4a0fa" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="0a4e85dc-18bd-4679-aef1-f6261866b1de" LastKnownName="ChocAn Data Center Application" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="d5ebc842-fd1e-4b89-9b76-7f4f0d3aa25d" name="UC18 - Update" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2f99bbde-6435-47c2-a04f-a1eaa9f6b5e6" />
+        <subjects>
+          <subsystemMoniker Id="0a4e85dc-18bd-4679-aef1-f6261866b1de" LastKnownName="ChocAn Data Center Application" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="0f9f3022-9012-4f4a-8c52-029eb5c5ea9a" name="UC17 - Add" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f3de4b9b-15b9-435e-9ce2-35c7f955a7de" />
+        <targetEnds>
+          <association Id="52cadaca-a9ee-4ad1-9072-bdd168699def" isDerived="false" sourceEndRoleName="Add" targetEndRoleName="Record payments of membership fees" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="aaf1897f-a47a-4dc4-b7aa-47c4089efa91" LastKnownName="UC7 - Record payments of membership fees" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="03c7723a-841d-446c-84fe-7e7597108788" name="Add" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4cd790a2-7a82-4243-b3c2-38518258e0ae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9b77696e-20eb-4046-9f28-578837bbcf25" name="Record payments of membership fees" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="287ddc97-e930-49a9-a3a3-9a2dcbf52044" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2a1c3acd-2a04-4d66-8f51-7b17477104af" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="0a4e85dc-18bd-4679-aef1-f6261866b1de" LastKnownName="ChocAn Data Center Application" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="5e95e7bd-0bc0-4f0f-88e0-96dca60f78c3" name="UC19 - Deactivate" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5dbb3818-cba8-4a21-aab4-ffa600cadb82" />
+        <subjects>
+          <subsystemMoniker Id="0a4e85dc-18bd-4679-aef1-f6261866b1de" LastKnownName="ChocAn Data Center Application" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2e465be1-ecf3-40be-b902-7160f85ba4cd" name="Update1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="46d30dd8-68c4-43ba-aa40-f03ef3e6375f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1203007f-f560-42a8-be59-85129956ff3b" name="Add1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="725a2a42-d927-454a-b6cc-5efd076c6b45" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fad454f1-bd53-471b-910c-309b32988b9e" name="Delete1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f2d96be6-671c-47e9-97e7-3991d3b9475d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="2a80499c-0298-4e1a-a7af-83f0fc464826" name="UC14 - Add" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d07accd7-f925-4eea-bcf9-bce99b4363ea" />
+        <subjects>
+          <subsystemMoniker Id="0a4e85dc-18bd-4679-aef1-f6261866b1de" LastKnownName="ChocAn Data Center Application" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="21ffd103-8ded-45c4-bc64-2172ce437c82" name="UC15 - Update" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5d845fdd-4639-44ae-9a4d-03f403f186f3" />
+        <subjects>
+          <subsystemMoniker Id="0a4e85dc-18bd-4679-aef1-f6261866b1de" LastKnownName="ChocAn Data Center Application" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="6e7f0138-e0cf-4a19-bc58-ffe013f58db9" name="UC16 - Deactivate" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="899eb77d-98f4-4248-a972-f6471f7bfff3" />
+        <subjects>
+          <subsystemMoniker Id="0a4e85dc-18bd-4679-aef1-f6261866b1de" LastKnownName="ChocAn Data Center Application" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="a2dfad44-a545-4496-9862-9d2e3c8d94dc" name="Acme Accounting Services" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6d70d514-bd3b-4a6b-be4e-d16cf2ee266c" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="aaf1897f-a47a-4dc4-b7aa-47c4089efa91" name="UC7 - Record payments of membership fees" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="91db3bb0-1183-4647-9371-93d6d29194d3" />
+        <subjects>
+          <subsystemMoniker Id="a2dfad44-a545-4496-9862-9d2e3c8d94dc" LastKnownName="Acme Accounting Services" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="cce6fb73-d448-4295-9114-6eaaec029362" name="UC8 - Suspend overdue members" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0d6bee66-8b43-459a-acfd-030b192f8ad6" />
+        <targetEnds>
+          <association Id="b3b27c13-9cfc-4e53-84e4-221bc4e1761d" isDerived="false" sourceEndRoleName="Suspend overdue members" targetEndRoleName="Update" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d5ebc842-fd1e-4b89-9b76-7f4f0d3aa25d" LastKnownName="UC18 - Update" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="31b21cb0-70da-4e98-864b-c37a76587b60" name="Suspend overdue members" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="52baaba2-fca5-4f74-ae37-2993df8e8404" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="29372271-f10c-40b9-9861-3ba8856df8d7" name="Update" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8d0d7bdf-26b2-4e6f-a126-f09505863c8b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dc88e11c-186a-4248-9aa0-1fd46ab651c2" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="a2dfad44-a545-4496-9862-9d2e3c8d94dc" LastKnownName="Acme Accounting Services" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="9fc98ac3-6be1-4b9e-b816-5af234408270" name="UC9 - Reinstate members" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0eb9dc29-ab69-4373-b582-8f0ce34844e7" />
+        <targetEnds>
+          <association Id="6746fe3a-309c-482f-b550-055d676efbff" isDerived="false" sourceEndRoleName="Reinstate members" targetEndRoleName="Update" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d5ebc842-fd1e-4b89-9b76-7f4f0d3aa25d" LastKnownName="UC18 - Update" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7ee0dff8-231a-45fe-b9cb-ec2585ac589a" name="Reinstate members" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="77d2345b-e52d-432f-ad7e-788ea5e6ca5e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c0751324-dfb3-40c0-9ec9-4655b8b14df8" name="Update" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="53d36162-7f18-4db0-bf8a-984b1aa2e14d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0e5e75b4-5b28-464b-92ad-5fddd99a9ddb" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="a2dfad44-a545-4496-9862-9d2e3c8d94dc" LastKnownName="Acme Accounting Services" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="0586a269-8dee-4316-a560-904d555f67c6" name="ChocAn Member" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8f3277a2-f2db-4250-b7ba-d6f8472d6e9d" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="f9363ab9-24c6-4d10-9e95-79332098d6b6" name="ChocAn Provider" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c91b4ac6-0612-4e40-9e78-76a4c1638b85" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="bd61b81f-19d3-452c-9f90-a81bb10d74a1" name="UC6 - Verify Provider Number" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="027138f4-1a51-49c2-bf5e-f3b5b8b926e0" />
+        <subjects>
+          <subsystemMoniker Id="0a4e85dc-18bd-4679-aef1-f6261866b1de" LastKnownName="ChocAn Data Center Application" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="cdc9a86e-6834-477c-a190-f1ccaa6a4c1e" name="Chocoholics.Design">
+    <elementDefinition Id="5bb44a78-19fe-4170-925a-567c223309a9" />
+    <profileInstances>
+      <packageHasProfileInstances Id="b43abf3c-9db4-417b-8ae9-f8dce176b56e">
+        <profileInstance Id="5e61aec5-6610-487e-a1c1-86c74387e4cd" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="fe3e5b42-13c8-4c21-86af-45655fd3827b">
+        <profileInstance Id="2d50fef5-5c28-4a0a-a2c5-4b44774eeaa3" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

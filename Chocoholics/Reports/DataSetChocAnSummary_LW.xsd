@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetChocAnSummary_LW" targetNamespace="http://tempuri.org/DataSetChocAnSummary_LW.xsd" xmlns:mstns="http://tempuri.org/DataSetChocAnSummary_LW.xsd" xmlns="http://tempuri.org/DataSetChocAnSummary_LW.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ChocolateConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ChocolateConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Chocoholics.Properties.Settings.GlobalReference.Default.ChocolateConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="rpt_summaryforthelastweekTableAdapter" GeneratorDataComponentClassName="rpt_summaryforthelastweekTableAdapter" Name="rpt_summaryforthelastweek" UserDataComponentName="rpt_summaryforthelastweekTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ChocolateConnectionString (Settings)" DbObjectName="`chocolate`.`rpt_summaryforthelastweek`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`chocolate`.`rpt_summaryforthelastweek`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="name" DataSetColumn="name" />
+              <Mapping SourceColumn="treatment_cnt" DataSetColumn="treatment_cnt" />
+              <Mapping SourceColumn="service_total" DataSetColumn="service_total" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetChocAnSummary_LW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetChocAnSummary_LW" msprop:Generator_UserDSName="DataSetChocAnSummary_LW">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="rpt_summaryforthelastweek" msprop:Generator_TableClassName="rpt_summaryforthelastweekDataTable" msprop:Generator_TableVarName="tablerpt_summaryforthelastweek" msprop:Generator_RowChangedName="rpt_summaryforthelastweekRowChanged" msprop:Generator_TablePropName="rpt_summaryforthelastweek" msprop:Generator_RowDeletingName="rpt_summaryforthelastweekRowDeleting" msprop:Generator_RowChangingName="rpt_summaryforthelastweekRowChanging" msprop:Generator_RowEvHandlerName="rpt_summaryforthelastweekRowChangeEventHandler" msprop:Generator_RowDeletedName="rpt_summaryforthelastweekRowDeleted" msprop:Generator_RowClassName="rpt_summaryforthelastweekRow" msprop:Generator_UserTableName="rpt_summaryforthelastweek" msprop:Generator_RowEvArgName="rpt_summaryforthelastweekRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="treatment_cnt" msprop:Generator_ColumnVarNameInTable="columntreatment_cnt" msprop:Generator_ColumnPropNameInRow="treatment_cnt" msprop:Generator_ColumnPropNameInTable="treatment_cntColumn" msprop:Generator_UserColumnName="treatment_cnt" type="xs:long" />
+              <xs:element name="service_total" msprop:nullValue="0.00" msprop:Generator_ColumnPropNameInRow="service_total" msprop:Generator_ColumnVarNameInTable="columnservice_total" msprop:Generator_ColumnPropNameInTable="service_totalColumn" msprop:Generator_UserColumnName="service_total" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

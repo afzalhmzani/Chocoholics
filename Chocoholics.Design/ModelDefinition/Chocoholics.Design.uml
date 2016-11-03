@@ -1,0 +1,3530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+  dslVersion="1.0.0.0"
+  Id="5bb44a78-19fe-4170-925a-567c223309a9"
+  name="Chocoholics.Design" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="490d5b7f-9b3e-4a23-b288-6195b5bd364f"
+        name="Provider"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="7324fdc3-209a-4d8e-8367-f4f8ba64eb5d"
+        name="Provider"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="bce2bcbf-02d4-40fb-a302-f9ae9b2f9f6a"
+            isDerived="false"
+            sourceEndRoleName="Provider"
+            targetEndRoleName="Verify Member Number"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2acf1557-c6fb-48e6-9d14-a6f9dbfda1ad"
+              LastKnownName="UC5 - Verify Member Number"
+              LastKnownLocation="Chocoholics.Design.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="446295a6-c475-4c7b-bfdc-a89ed88ad1a6"
+                  name="Provider"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c3ef4cd5-068b-43a5-ae5c-ce98f2de4919"
+                  name="Verify Member Number"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4a51b041-01ff-4fd1-8f68-1c871157f4b2"
+            isDerived="false"
+            sourceEndRoleName="Provider"
+            targetEndRoleName="Request Provider Directory"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8aaf558e-ca71-4878-94cb-6a4420cfedd8"
+              LastKnownName="UC20 - Request Provider Directory"
+              LastKnownLocation="Chocoholics.Design.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="be6be5aa-fb4a-4037-98f4-826df61c3e36"
+                  name="Provider"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5d1b3cfd-036c-4e7f-98cc-404f022e507c"
+                  name="Request Provider Directory"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="76af5ee9-fe9c-4922-80d2-b1f3bb134195"
+            isDerived="false"
+            sourceEndRoleName="Provider"
+            targetEndRoleName="Bill ChocAn for services provided"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c512b45b-b388-48e2-9e9b-67afbd267cf2"
+              LastKnownName="UC21 - Bill ChocAn for services provided"
+              LastKnownLocation="Chocoholics.Design.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d25083c2-ad6f-4891-bc2a-dffcd1f73766"
+                  name="Provider"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f85320f1-e58c-46aa-86ec-8838eca21d13"
+                  name="Bill ChocAn for services provided"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="879df9ba-7c81-4b3c-9eb9-815c9fe58fbd"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5ac746cd-1596-4400-a33a-72ca92924571"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="de8fe4cb-68a6-4561-8f85-f723796da0fe"
+            isDerived="false"
+            sourceEndRoleName="Provider"
+            targetEndRoleName="Treatment Services"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1db25d64-4705-490b-a122-cb94916a1e31"
+              LastKnownName="Treatment Services"
+              LastKnownLocation="Chocoholics.Design.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0827fc81-7710-4537-a481-88cfa4632069"
+                  name="Provider"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2d745329-6204-426b-885a-36f4f2c058dd"
+                  name="Treatment Services"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3f6478a9-18f9-4872-9ee0-275382ed9392"
+            isDerived="false"
+            sourceEndRoleName="Provider"
+            targetEndRoleName="UC6 - Verify Provider Number"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="027138f4-1a51-49c2-bf5e-f3b5b8b926e0"
+              LastKnownName="UC6 - Verify Provider Number"
+              LastKnownLocation="Chocoholics.Design.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="604ab5e3-6216-4bda-9b3b-7c567ca255af"
+                  name="Provider"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="84441ce4-a0ab-49cb-b51e-fbf4bde7a400"
+                  name="UC6 - Verify Provider Number"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2acf1557-c6fb-48e6-9d14-a6f9dbfda1ad"
+        name="UC5 - Verify Member Number"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="3ff1ca9e-b1f4-4ced-80e8-41ed9665f31b"
+            LastKnownName="ChocAn Data Center Application"
+            LastKnownLocation="Chocoholics.Design.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="3dd9307d-ecc1-4643-a5cc-54845fd473a5"
+        name="ChocAn Member"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="cd29ada1-5fe2-4cd7-8d1a-1c654a4f393a"
+            isDerived="false"
+            sourceEndRoleName="Chocoholic"
+            targetEndRoleName="Treatment Services"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1db25d64-4705-490b-a122-cb94916a1e31"
+              LastKnownName="Treatment Services"
+              LastKnownLocation="Chocoholics.Design.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9b37a4f4-2cbe-44e1-9bc1-17959906a72c"
+                  name="Chocoholic"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="889ae9f7-e5e2-4793-86bf-616fb62161d9"
+                  name="Treatment Services"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5226a6d4-630e-463a-88ac-2a473489dda1"
+            isDerived="false"
+            sourceEndRoleName="Chocoholic"
+            targetEndRoleName="Verify Member Number"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2acf1557-c6fb-48e6-9d14-a6f9dbfda1ad"
+              LastKnownName="UC5 - Verify Member Number"
+              LastKnownLocation="Chocoholics.Design.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ad6db103-c444-4f08-bbc0-ee2b43a14e58"
+                  name="Chocoholic"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="618b5250-f58a-4b96-afc2-b9b7d29f847f"
+                  name="Verify Member Number"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="3ff1ca9e-b1f4-4ced-80e8-41ed9665f31b"
+        name="ChocAn Data Center Application"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0de67598-9c8a-4af3-9829-c5054e6f47d9"
+        name="UC23 - Administer Members"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="1ba4dff4-d72f-43b5-a61f-8d464fb91754">
+            <useCaseMoniker
+              Id="f3de4b9b-15b9-435e-9ce2-35c7f955a7de"
+              LastKnownName="UC17 - Add"
+              LastKnownLocation="Chocoholics.Design.uml" />
+          </include>
+          <include
+            Id="ba489423-120d-4117-af30-db43f2c5f933">
+            <useCaseMoniker
+              Id="2f99bbde-6435-47c2-a04f-a1eaa9f6b5e6"
+              LastKnownName="UC18 - Update"
+              LastKnownLocation="Chocoholics.Design.uml" />
+          </include>
+          <include
+            Id="aa20661d-4bb5-4548-ad2c-2a7f33790213">
+            <useCaseMoniker
+              Id="5dbb3818-cba8-4a21-aab4-ffa600cadb82"
+              LastKnownName="UC19 - Deactivate"
+              LastKnownLocation="Chocoholics.Design.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="3ff1ca9e-b1f4-4ced-80e8-41ed9665f31b"
+            LastKnownName="ChocAn Data Center Application"
+            LastKnownLocation="Chocoholics.Design.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c512b45b-b388-48e2-9e9b-67afbd267cf2"
+        name="UC21 - Bill ChocAn for services provided"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="6be759ad-a6a5-4fc5-8143-aa62798ced17">
+            <useCaseMoniker
+              Id="1cd87146-503b-4046-9049-bdc44ccf554e"
+              LastKnownName="Verify Member Number"
+              LastKnownLocation="Chocoholics.Design.uml" />
+          </include>
+          <include
+            Id="91c7b416-ab37-427f-a14a-750169ebed10">
+            <useCaseMoniker
+              Id="0685ed5d-1d4c-48e9-ba39-246bec3ff680"
+              LastKnownName="UC3 - Look up service code and display service name"
+              LastKnownLocation="Chocoholics.Design.uml" />
+          </include>
+          <include
+            Id="63bd54bb-ce2c-43e1-b61e-3014b0ef9ebc">
+            <useCaseMoniker
+              Id="6f412b87-fb0c-42ca-815e-c0dd0cb339e1"
+              LastKnownName="UC4 - Look up and display fee to pay"
+              LastKnownLocation="Chocoholics.Design.uml" />
+          </include>
+          <include
+            Id="c9785ef5-eaf0-4d4a-b798-da2791d38f00">
+            <useCaseMoniker
+              Id="2acf1557-c6fb-48e6-9d14-a6f9dbfda1ad"
+              LastKnownName="UC5 - Verify Member Number"
+              LastKnownLocation="Chocoholics.Design.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="3ff1ca9e-b1f4-4ced-80e8-41ed9665f31b"
+            LastKnownName="ChocAn Data Center Application"
+            LastKnownLocation="Chocoholics.Design.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1cd87146-503b-4046-9049-bdc44ccf554e"
+        name="Verify Member Number"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0685ed5d-1d4c-48e9-ba39-246bec3ff680"
+        name="UC3 - Look up service code and display service name"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="3ff1ca9e-b1f4-4ced-80e8-41ed9665f31b"
+            LastKnownName="ChocAn Data Center Application"
+            LastKnownLocation="Chocoholics.Design.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6f412b87-fb0c-42ca-815e-c0dd0cb339e1"
+        name="UC4 - Look up and display fee to pay"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="3ff1ca9e-b1f4-4ced-80e8-41ed9665f31b"
+            LastKnownName="ChocAn Data Center Application"
+            LastKnownLocation="Chocoholics.Design.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8aaf558e-ca71-4878-94cb-6a4420cfedd8"
+        name="UC20 - Request Provider Directory"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="571986c6-0e5a-49a8-b3e3-f6029205da2b">
+            <useCaseMoniker
+              Id="bf4c5167-6d87-4854-9d99-2e33033850f3"
+              LastKnownName="UC1 - Create directory"
+              LastKnownLocation="Chocoholics.Design.uml" />
+          </include>
+          <include
+            Id="79426102-6fee-474f-b04a-02359cf55f38">
+            <useCaseMoniker
+              Id="953db292-031d-4c08-818a-79fea6247c6d"
+              LastKnownName="UC2 - Email report"
+              LastKnownLocation="Chocoholics.Design.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="3ff1ca9e-b1f4-4ced-80e8-41ed9665f31b"
+            LastKnownName="ChocAn Data Center Application"
+            LastKnownLocation="Chocoholics.Design.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bf4c5167-6d87-4854-9d99-2e33033850f3"
+        name="UC1 - Create directory"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="3ff1ca9e-b1f4-4ced-80e8-41ed9665f31b"
+            LastKnownName="ChocAn Data Center Application"
+            LastKnownLocation="Chocoholics.Design.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="953db292-031d-4c08-818a-79fea6247c6d"
+        name="UC2 - Email report"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="3ff1ca9e-b1f4-4ced-80e8-41ed9665f31b"
+            LastKnownName="ChocAn Data Center Application"
+            LastKnownLocation="Chocoholics.Design.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="b9a16738-66d2-4052-8e02-1d5cf8b04e39"
+        name="ChocAn manager"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="e60a6b3f-f71b-44d0-a42c-883c7a47b88e"
+            isDerived="false"
+            sourceEndRoleName="ChocAn manager"
+            targetEndRoleName="Run active member report and email member"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="99078def-396c-44da-bd7d-2b2dc04af37b"
+              LastKnownName="UC11 - Run active member report and email member"
+              LastKnownLocation="Chocoholics.Design.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="334f5770-6376-4b8c-9594-315eae650f82"
+                  name="ChocAn manager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c36659ae-4293-4c37-a7c3-788f2d99de86"
+                  name="Run active member report and email member"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a6959714-a289-4d14-aeaf-36e390c9282a"
+            isDerived="false"
+            sourceEndRoleName="ChocAn manager"
+            targetEndRoleName="Run active provider report and email provider"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b79860e8-a6f2-4cb2-a4a6-e67f10ed6eb0"
+              LastKnownName="UC12 - Run active provider report and email provider"
+              LastKnownLocation="Chocoholics.Design.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="765d6938-c73d-4c95-9986-6c55daade622"
+                  name="ChocAn manager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6d190734-7ee4-44f0-a79a-82dc918388df"
+                  name="Run active provider report and email provider"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8026fa23-c990-406e-91d5-8aaae0e001d6"
+        name="UC24 - Run weekly reports"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="7125f1bc-2874-46cb-87e1-b1e80d97e693">
+            <useCaseMoniker
+              Id="99078def-396c-44da-bd7d-2b2dc04af37b"
+              LastKnownName="UC11 - Run active member report and email member"
+              LastKnownLocation="Chocoholics.Design.uml" />
+          </include>
+          <include
+            Id="59333552-1d9c-4ff3-bc89-f29eb381d569">
+            <useCaseMoniker
+              Id="b79860e8-a6f2-4cb2-a4a6-e67f10ed6eb0"
+              LastKnownName="UC12 - Run active provider report and email provider"
+              LastKnownLocation="Chocoholics.Design.uml" />
+          </include>
+          <include
+            Id="ccc14433-af1f-4831-ba37-0664431176ae">
+            <useCaseMoniker
+              Id="210f6291-66e7-4ac9-bec3-bcf19e401eff"
+              LastKnownName="UC13 - Run summary report"
+              LastKnownLocation="Chocoholics.Design.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="3ff1ca9e-b1f4-4ced-80e8-41ed9665f31b"
+            LastKnownName="ChocAn Data Center Application"
+            LastKnownLocation="Chocoholics.Design.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1d8ecd4d-ca3f-446b-bd0f-ef920126b458"
+        name="Provide member usage reports"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="0b031ddc-b9c9-4234-a57b-ae4509cdefc5">
+            <useCaseMoniker
+              Id="af0928d5-1da1-41b5-bb07-988e1f05ff7a"
+              LastKnownName="Create report for active member"
+              LastKnownLocation="Chocoholics.Design.uml" />
+          </include>
+          <include
+            Id="8a938f07-04b6-45a9-a3e5-39cc27bf68fa">
+            <useCaseMoniker
+              Id="c4eef55b-ae42-4893-a495-cc38d49df64b"
+              LastKnownName="Email report to member"
+              LastKnownLocation="Chocoholics.Design.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="af0928d5-1da1-41b5-bb07-988e1f05ff7a"
+        name="Create report for active member"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c4eef55b-ae42-4893-a495-cc38d49df64b"
+        name="Email report to member"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="fb79179d-2ee5-41d8-93cb-997771271100"
+            isDerived="false"
+            sourceEndRoleName="Email report to that member"
+            targetEndRoleName="Patient"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="3dd9307d-ecc1-4643-a5cc-54845fd473a5"
+              LastKnownName="ChocAn Member"
+              LastKnownLocation="Chocoholics.Design.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7722491e-d625-44ff-b96d-f7931c276bd1"
+                  name="Email report to that member"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="edf4bdc5-20ab-4713-b595-6bd82858337e"
+                  name="Patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="b39888ee-2799-4486-8736-26bdc10b7fae"
+        name="ChocAn System"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="799bb8a5-381a-45ed-95cf-fbe0d5c28a38"
+            isDerived="false"
+            sourceEndRoleName="ChocAn System"
+            targetEndRoleName="Run weekly reports"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8026fa23-c990-406e-91d5-8aaae0e001d6"
+              LastKnownName="UC24 - Run weekly reports"
+              LastKnownLocation="Chocoholics.Design.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="36d132d1-ee44-4a38-ac6e-daa76fff9185"
+                  name="ChocAn System"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d0f70abd-4a86-447a-b7da-409e7da638e5"
+                  name="Run weekly reports"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2b02d252-57d6-4c41-9259-f78e68e0d0de"
+            isDerived="false"
+            sourceEndRoleName="ChocAn System"
+            targetEndRoleName="Create EFT data"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="df28b28a-bd7d-48af-8936-a6ba6b6e964f"
+              LastKnownName="UC10 - Create EFT data"
+              LastKnownLocation="Chocoholics.Design.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f4697dce-08f8-4cfe-a554-e5fbe1ecee21"
+                  name="ChocAn System"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="64e2f8d1-24b5-4ddf-894a-8dc66763de64"
+                  name="Create EFT data"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="99078def-396c-44da-bd7d-2b2dc04af37b"
+        name="UC11 - Run active member report and email member"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="3ea5a991-2f91-484f-ad0e-1f3a8b733438"
+            isDerived="false"
+            sourceEndRoleName="Run active member report and email member"
+            targetEndRoleName="ChocAn Member"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="8f3277a2-f2db-4250-b7ba-d6f8472d6e9d"
+              LastKnownName="ChocAn Member"
+              LastKnownLocation="Chocoholics.Design.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7cb254fc-c4f4-460d-86d5-4b781934e8cb"
+                  name="Run active member report and email member"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="be17f2e9-b5ca-480a-9546-865a6e67f960"
+                  name="ChocAn Member"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="3ff1ca9e-b1f4-4ced-80e8-41ed9665f31b"
+            LastKnownName="ChocAn Data Center Application"
+            LastKnownLocation="Chocoholics.Design.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b79860e8-a6f2-4cb2-a4a6-e67f10ed6eb0"
+        name="UC12 - Run active provider report and email provider"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="17fa2274-b553-475d-b191-1cc862252bf2"
+            isDerived="false"
+            sourceEndRoleName="Run active provider report and email provider"
+            targetEndRoleName="ChocAn Provider"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="c91b4ac6-0612-4e40-9e78-76a4c1638b85"
+              LastKnownName="ChocAn Provider"
+              LastKnownLocation="Chocoholics.Design.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="969d4c07-649b-40ec-97cb-bb3d3ce0ca4f"
+                  name="Run active provider report and email provider"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="82f9a29b-ee8e-4866-bce2-39451d9c720d"
+                  name="ChocAn Provider"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="3ff1ca9e-b1f4-4ced-80e8-41ed9665f31b"
+            LastKnownName="ChocAn Data Center Application"
+            LastKnownLocation="Chocoholics.Design.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="df28b28a-bd7d-48af-8936-a6ba6b6e964f"
+        name="UC10 - Create EFT data"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="3ff1ca9e-b1f4-4ced-80e8-41ed9665f31b"
+            LastKnownName="ChocAn Data Center Application"
+            LastKnownLocation="Chocoholics.Design.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="210f6291-66e7-4ac9-bec3-bcf19e401eff"
+        name="UC13 - Run summary report"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="3ff1ca9e-b1f4-4ced-80e8-41ed9665f31b"
+            LastKnownName="ChocAn Data Center Application"
+            LastKnownLocation="Chocoholics.Design.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="7fb27a3c-5316-49e2-a3d5-40fe5e3d3b18"
+        name="Accounts Payable manager"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="cd916088-2c47-4596-b420-afe188c4554a"
+            isDerived="false"
+            sourceEndRoleName="AccountsPayable manager"
+            targetEndRoleName="Run summary report"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="210f6291-66e7-4ac9-bec3-bcf19e401eff"
+              LastKnownName="UC13 - Run summary report"
+              LastKnownLocation="Chocoholics.Design.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e2657995-3a6b-4df0-969b-778744afe739"
+                  name="AccountsPayable manager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="17620944-70b0-41de-ae63-b5238a83b85b"
+                  name="Run summary report"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="297939a3-d515-4198-89d6-de6b4583c5cc"
+        name="Operator"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="74aa1a02-c807-49ad-b797-c5ecbf495d53"
+            isDerived="false"
+            sourceEndRoleName="Operator"
+            targetEndRoleName="Administer Providers"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a07b5bdc-88d9-481b-a05c-e52713f91798"
+              LastKnownName="UC22 - Administer Providers"
+              LastKnownLocation="Chocoholics.Design.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5f0a10c4-6118-4346-bd08-c0e0b222a0bc"
+                  name="Operator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f170481e-b28d-4112-8349-9c9c7bbf0701"
+                  name="Administer Providers"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b69dd43b-9e62-4d96-a79c-c3ffc2dfdf0b"
+            isDerived="false"
+            sourceEndRoleName="Operator"
+            targetEndRoleName="Administer Members"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="0de67598-9c8a-4af3-9829-c5054e6f47d9"
+              LastKnownName="UC23 - Administer Members"
+              LastKnownLocation="Chocoholics.Design.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="259db938-cb78-4db1-b2b4-103cd0d8f25a"
+                  name="Operator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2515e22c-e08a-4205-93d8-d1024bffadc7"
+                  name="Administer Members"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a07b5bdc-88d9-481b-a05c-e52713f91798"
+        name="UC22 - Administer Providers"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="efbe2c0e-da4c-4a99-b7f0-fc60758f9d4a">
+            <useCaseMoniker
+              Id="d07accd7-f925-4eea-bcf9-bce99b4363ea"
+              LastKnownName="UC14 - Add"
+              LastKnownLocation="Chocoholics.Design.uml" />
+          </include>
+          <include
+            Id="ab6e5dde-c871-4cf2-ac22-d18aa6c5e44f">
+            <useCaseMoniker
+              Id="5d845fdd-4639-44ae-9a4d-03f403f186f3"
+              LastKnownName="UC15 - Update"
+              LastKnownLocation="Chocoholics.Design.uml" />
+          </include>
+          <include
+            Id="14f823cc-1972-454f-8014-3b0e62f4a0fa">
+            <useCaseMoniker
+              Id="899eb77d-98f4-4248-a972-f6471f7bfff3"
+              LastKnownName="UC16 - Deactivate"
+              LastKnownLocation="Chocoholics.Design.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="3ff1ca9e-b1f4-4ced-80e8-41ed9665f31b"
+            LastKnownName="ChocAn Data Center Application"
+            LastKnownLocation="Chocoholics.Design.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2f99bbde-6435-47c2-a04f-a1eaa9f6b5e6"
+        name="UC18 - Update"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="3ff1ca9e-b1f4-4ced-80e8-41ed9665f31b"
+            LastKnownName="ChocAn Data Center Application"
+            LastKnownLocation="Chocoholics.Design.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f3de4b9b-15b9-435e-9ce2-35c7f955a7de"
+        name="UC17 - Add"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="2a1c3acd-2a04-4d66-8f51-7b17477104af"
+            isDerived="false"
+            sourceEndRoleName="Add"
+            targetEndRoleName="Record payments of membership fees"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="91db3bb0-1183-4647-9371-93d6d29194d3"
+              LastKnownName="UC7 - Record payments of membership fees"
+              LastKnownLocation="Chocoholics.Design.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4cd790a2-7a82-4243-b3c2-38518258e0ae"
+                  name="Add"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="287ddc97-e930-49a9-a3a3-9a2dcbf52044"
+                  name="Record payments of membership fees"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="3ff1ca9e-b1f4-4ced-80e8-41ed9665f31b"
+            LastKnownName="ChocAn Data Center Application"
+            LastKnownLocation="Chocoholics.Design.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5dbb3818-cba8-4a21-aab4-ffa600cadb82"
+        name="UC19 - Deactivate"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="3ff1ca9e-b1f4-4ced-80e8-41ed9665f31b"
+            LastKnownName="ChocAn Data Center Application"
+            LastKnownLocation="Chocoholics.Design.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="46d30dd8-68c4-43ba-aa40-f03ef3e6375f"
+        name="Update1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="725a2a42-d927-454a-b6cc-5efd076c6b45"
+        name="Add1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f2d96be6-671c-47e9-97e7-3991d3b9475d"
+        name="Delete1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d07accd7-f925-4eea-bcf9-bce99b4363ea"
+        name="UC14 - Add"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="3ff1ca9e-b1f4-4ced-80e8-41ed9665f31b"
+            LastKnownName="ChocAn Data Center Application"
+            LastKnownLocation="Chocoholics.Design.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5d845fdd-4639-44ae-9a4d-03f403f186f3"
+        name="UC15 - Update"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="3ff1ca9e-b1f4-4ced-80e8-41ed9665f31b"
+            LastKnownName="ChocAn Data Center Application"
+            LastKnownLocation="Chocoholics.Design.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="899eb77d-98f4-4248-a972-f6471f7bfff3"
+        name="UC16 - Deactivate"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="3ff1ca9e-b1f4-4ced-80e8-41ed9665f31b"
+            LastKnownName="ChocAn Data Center Application"
+            LastKnownLocation="Chocoholics.Design.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="6d70d514-bd3b-4a6b-be4e-d16cf2ee266c"
+        name="Acme Accounting Services"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="91db3bb0-1183-4647-9371-93d6d29194d3"
+        name="UC7 - Record payments of membership fees"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="6d70d514-bd3b-4a6b-be4e-d16cf2ee266c"
+            LastKnownName="Acme Accounting Services"
+            LastKnownLocation="Chocoholics.Design.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0d6bee66-8b43-459a-acfd-030b192f8ad6"
+        name="UC8 - Suspend overdue members"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="dc88e11c-186a-4248-9aa0-1fd46ab651c2"
+            isDerived="false"
+            sourceEndRoleName="Suspend overdue members"
+            targetEndRoleName="Update"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2f99bbde-6435-47c2-a04f-a1eaa9f6b5e6"
+              LastKnownName="UC18 - Update"
+              LastKnownLocation="Chocoholics.Design.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="52baaba2-fca5-4f74-ae37-2993df8e8404"
+                  name="Suspend overdue members"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8d0d7bdf-26b2-4e6f-a126-f09505863c8b"
+                  name="Update"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="6d70d514-bd3b-4a6b-be4e-d16cf2ee266c"
+            LastKnownName="Acme Accounting Services"
+            LastKnownLocation="Chocoholics.Design.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0eb9dc29-ab69-4373-b582-8f0ce34844e7"
+        name="UC9 - Reinstate members"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="0e5e75b4-5b28-464b-92ad-5fddd99a9ddb"
+            isDerived="false"
+            sourceEndRoleName="Reinstate members"
+            targetEndRoleName="Update"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2f99bbde-6435-47c2-a04f-a1eaa9f6b5e6"
+              LastKnownName="UC18 - Update"
+              LastKnownLocation="Chocoholics.Design.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="77d2345b-e52d-432f-ad7e-788ea5e6ca5e"
+                  name="Reinstate members"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="53d36162-7f18-4db0-bf8a-984b1aa2e14d"
+                  name="Update"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="6d70d514-bd3b-4a6b-be4e-d16cf2ee266c"
+            LastKnownName="Acme Accounting Services"
+            LastKnownLocation="Chocoholics.Design.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1db25d64-4705-490b-a122-cb94916a1e31"
+        name="Treatment Services"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="8f3277a2-f2db-4250-b7ba-d6f8472d6e9d"
+        name="ChocAn Member"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="c91b4ac6-0612-4e40-9e78-76a4c1638b85"
+        name="ChocAn Provider"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="b1258945-0164-481a-8cd6-a3a5767ba6db"
+        name="RunWeeklyReports"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="9f9e05bb-b336-4fa8-a65a-73ccd6d137cf"
+            name="BehaviorExecutionSpecification13">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="53e1cfbd-044c-45ab-8058-513e80ec05a4"
+                LastKnownName="ExecutionOccurrenceSpecification26"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="a5977f49-ef81-4a94-bb28-176fdc1f8008"
+                LastKnownName="ExecutionOccurrenceSpecification25"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="3615572f-8f74-461e-a60a-c2dadf86cab2"
+                LastKnownName="MessageOccurrenceSpecification42"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="f395599f-f575-430e-8d4a-7510d609815e"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="04d08948-f8ac-429b-801c-789ed9f4a099"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="0ff629a4-1d54-4613-a00a-49cf4748df0b"
+                LastKnownName="MessageOccurrenceSpecification51"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="8108341e-5734-49ac-ac76-95967710ecba"
+                LastKnownName="ExecutionOccurrenceSpecification33"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="39fe8e60-f8c0-4300-a0e2-bf574dc008c8"
+                LastKnownName="ExecutionOccurrenceSpecification34"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="3958675d-28bd-44ba-8933-9d5b5cac67a8"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="795b634b-0e73-42b6-98a8-6989c05ae350"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="1d475e46-eac7-409b-a301-cca915a711eb"
+                LastKnownName="MessageOccurrenceSpecification55"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="da40ed15-9256-497d-a1e0-7e07fd281ed4"
+                LastKnownName="ExecutionOccurrenceSpecification37"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="64ffc197-ffc0-498d-af60-8878d87a1949"
+                LastKnownName="ExecutionOccurrenceSpecification38"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="0a964d4b-ce1a-4184-9d05-f9bd676c9f6f"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="863abaaa-235c-4adf-80f4-656ed386d682"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="cdaa5169-baec-44dc-a27c-cbabfd5e47f1"
+                LastKnownName="MessageOccurrenceSpecification49"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="59c13545-115f-4ab0-bb20-3067e588bc16"
+                LastKnownName="ExecutionOccurrenceSpecification31"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="753ab692-43bc-4de4-b96c-1433162c6baa"
+                LastKnownName="ExecutionOccurrenceSpecification32"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="8607edcb-a3ca-43b8-85b5-798f2d3086f6"
+                LastKnownName="MessageOccurrenceSpecification43"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="a5977f49-ef81-4a94-bb28-176fdc1f8008"
+            name="ExecutionOccurrenceSpecification25">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ef580c55-aa1e-4df7-944b-43cc98f42271"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Chocoholics.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="3615572f-8f74-461e-a60a-c2dadf86cab2"
+            name="MessageOccurrenceSpecification42">
+            <covered>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="df955749-60fa-4f01-8a34-22845e7142f3"
+            name="MessageOccurrenceSpecification41">
+            <covered>
+              <lifelineMoniker
+                Id="93a5d2b0-fc2a-441a-b01e-1620e775f82d"
+                LastKnownName="ChocAnSystem"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="c7bfd344-9237-4985-8249-fe13a57c9ac7"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="b0fb7327-10b7-4320-9f3a-a5fd4038637b"
+                LastKnownName="ActiveMemberReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="1edd56d3-0132-4166-bd4c-7876ecf041f1"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="2732fe4b-65cf-42f1-a435-c15c557f1927"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="993bf0c8-160e-458a-a7fa-fa5430c32e90"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="8352f8f7-c7bb-437f-8d47-8a27fd7a608f"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="2732fe4b-65cf-42f1-a435-c15c557f1927"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="06de1dba-cdf0-454b-abc0-36051a5d6d4f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Chocoholics.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="b0fb7327-10b7-4320-9f3a-a5fd4038637b"
+                LastKnownName="ActiveMemberReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="993bf0c8-160e-458a-a7fa-fa5430c32e90"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="b0fb7327-10b7-4320-9f3a-a5fd4038637b"
+                LastKnownName="ActiveMemberReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f395599f-f575-430e-8d4a-7510d609815e"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="04d08948-f8ac-429b-801c-789ed9f4a099"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8352f8f7-c7bb-437f-8d47-8a27fd7a608f"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="b0fb7327-10b7-4320-9f3a-a5fd4038637b"
+                LastKnownName="ActiveMemberReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="1edd56d3-0132-4166-bd4c-7876ecf041f1"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="98d9f541-7296-47e8-9593-9a629dfc51e9"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Chocoholics.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="b0fb7327-10b7-4320-9f3a-a5fd4038637b"
+                LastKnownName="ActiveMemberReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0ff629a4-1d54-4613-a00a-49cf4748df0b"
+            name="MessageOccurrenceSpecification51">
+            <covered>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="18e5542e-c96c-4964-a6f1-88c70c95416d"
+            name="BehaviorExecutionSpecification17">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="39fe8e60-f8c0-4300-a0e2-bf574dc008c8"
+                LastKnownName="ExecutionOccurrenceSpecification34"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="8108341e-5734-49ac-ac76-95967710ecba"
+                LastKnownName="ExecutionOccurrenceSpecification33"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="d84fc289-89b5-43bc-aedd-047544bab1ac"
+                LastKnownName="MessageOccurrenceSpecification52"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="8108341e-5734-49ac-ac76-95967710ecba"
+            name="ExecutionOccurrenceSpecification33">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="5c888fc0-68d4-482b-a6e3-38c1e4f48767"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Chocoholics.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d84fc289-89b5-43bc-aedd-047544bab1ac"
+            name="MessageOccurrenceSpecification52">
+            <covered>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="39fe8e60-f8c0-4300-a0e2-bf574dc008c8"
+            name="ExecutionOccurrenceSpecification34">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="43e01808-0c93-41be-9e05-3ba2b3667d20"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Chocoholics.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="556cd511-14d9-46de-b48c-67f27622c031"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="20249239-5071-4b80-b22f-e18819cab16a"
+                LastKnownName="ActiveProviderReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="04da31c7-862c-4137-90e0-edf06f89b545"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="cc1f4a56-a785-46ed-bd10-633bf4420323"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="ecdd6023-570f-4903-89ce-1e8010a12e6c"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="2c9e90dd-ddd3-44ff-829b-f55f6ef058d3"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="cc1f4a56-a785-46ed-bd10-633bf4420323"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="90ebc967-e6af-43bd-924e-7f3b0c3d7d70"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Chocoholics.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="20249239-5071-4b80-b22f-e18819cab16a"
+                LastKnownName="ActiveProviderReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ecdd6023-570f-4903-89ce-1e8010a12e6c"
+            name="MessageOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="20249239-5071-4b80-b22f-e18819cab16a"
+                LastKnownName="ActiveProviderReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="3958675d-28bd-44ba-8933-9d5b5cac67a8"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="795b634b-0e73-42b6-98a8-6989c05ae350"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2c9e90dd-ddd3-44ff-829b-f55f6ef058d3"
+            name="MessageOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="20249239-5071-4b80-b22f-e18819cab16a"
+                LastKnownName="ActiveProviderReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="04da31c7-862c-4137-90e0-edf06f89b545"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d8a41986-475d-4e5d-8605-213db367c0c0"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Chocoholics.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="20249239-5071-4b80-b22f-e18819cab16a"
+                LastKnownName="ActiveProviderReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1d475e46-eac7-409b-a301-cca915a711eb"
+            name="MessageOccurrenceSpecification55">
+            <covered>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="85a737a5-68ff-41b5-9ab7-1a64c7c8c38e"
+            name="BehaviorExecutionSpecification19">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="64ffc197-ffc0-498d-af60-8878d87a1949"
+                LastKnownName="ExecutionOccurrenceSpecification38"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="da40ed15-9256-497d-a1e0-7e07fd281ed4"
+                LastKnownName="ExecutionOccurrenceSpecification37"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="6480b241-8257-4c87-816f-fede9e727717"
+                LastKnownName="MessageOccurrenceSpecification56"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="da40ed15-9256-497d-a1e0-7e07fd281ed4"
+            name="ExecutionOccurrenceSpecification37">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="97477dfe-afda-431d-bc87-509bf424fea4"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Chocoholics.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6480b241-8257-4c87-816f-fede9e727717"
+            name="MessageOccurrenceSpecification56">
+            <covered>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="64ffc197-ffc0-498d-af60-8878d87a1949"
+            name="ExecutionOccurrenceSpecification38">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b7ec1175-8c0a-4e8c-b84a-c73a8e3205aa"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Chocoholics.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="50be0204-3dc1-4247-9e8c-33f3618b4484"
+            name="BehaviorExecutionSpecification6">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="a88e6d8f-95db-4a1f-a2ff-0340b6b38574"
+                LastKnownName="ProviderSummaryReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="e1a0147f-f6ef-4626-96e7-f50d667c25c7"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="d079c9d7-1261-4746-972c-9b09d3dec630"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="a2fc4a4b-3eb3-4468-a9a9-3006bbf64215"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="2434ce51-f221-4a4b-9474-8b06891f780f"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="d079c9d7-1261-4746-972c-9b09d3dec630"
+            name="ExecutionOccurrenceSpecification11">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="cc6a0f40-bfd2-45d0-9e37-73da26ecb058"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Chocoholics.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a88e6d8f-95db-4a1f-a2ff-0340b6b38574"
+                LastKnownName="ProviderSummaryReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a2fc4a4b-3eb3-4468-a9a9-3006bbf64215"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="a88e6d8f-95db-4a1f-a2ff-0340b6b38574"
+                LastKnownName="ProviderSummaryReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0a964d4b-ce1a-4184-9d05-f9bd676c9f6f"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2434ce51-f221-4a4b-9474-8b06891f780f"
+            name="MessageOccurrenceSpecification21">
+            <covered>
+              <lifelineMoniker
+                Id="a88e6d8f-95db-4a1f-a2ff-0340b6b38574"
+                LastKnownName="ProviderSummaryReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="863abaaa-235c-4adf-80f4-656ed386d682"
+            name="MessageOccurrenceSpecification22">
+            <covered>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="e1a0147f-f6ef-4626-96e7-f50d667c25c7"
+            name="ExecutionOccurrenceSpecification12">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="c7752cfd-288b-4b53-8bf7-47549a7e3305"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Chocoholics.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a88e6d8f-95db-4a1f-a2ff-0340b6b38574"
+                LastKnownName="ProviderSummaryReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="cdaa5169-baec-44dc-a27c-cbabfd5e47f1"
+            name="MessageOccurrenceSpecification49">
+            <covered>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="1ddb9888-8ec6-42b7-a8d7-864f908a4872"
+            name="BehaviorExecutionSpecification16">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="753ab692-43bc-4de4-b96c-1433162c6baa"
+                LastKnownName="ExecutionOccurrenceSpecification32"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="59c13545-115f-4ab0-bb20-3067e588bc16"
+                LastKnownName="ExecutionOccurrenceSpecification31"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="98c03909-4ff3-466c-a3a8-699b9cb28582"
+                LastKnownName="MessageOccurrenceSpecification50"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="59c13545-115f-4ab0-bb20-3067e588bc16"
+            name="ExecutionOccurrenceSpecification31">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="878441a4-149a-42b0-8617-285066e5f27d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Chocoholics.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="98c03909-4ff3-466c-a3a8-699b9cb28582"
+            name="MessageOccurrenceSpecification50">
+            <covered>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="753ab692-43bc-4de4-b96c-1433162c6baa"
+            name="ExecutionOccurrenceSpecification32">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="271c8e24-8489-40fb-b875-aede0e05e385"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Chocoholics.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8607edcb-a3ca-43b8-85b5-798f2d3086f6"
+            name="MessageOccurrenceSpecification43">
+            <covered>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e4226a9e-ff71-405a-abd4-3f5db501d882"
+            name="MessageOccurrenceSpecification44">
+            <covered>
+              <lifelineMoniker
+                Id="93a5d2b0-fc2a-441a-b01e-1620e775f82d"
+                LastKnownName="ChocAnSystem"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="53e1cfbd-044c-45ab-8058-513e80ec05a4"
+            name="ExecutionOccurrenceSpecification26">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="9da28a64-9fdc-4b91-9268-ccf98849ff28"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Chocoholics.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+                LastKnownName="ReportingService"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="93a5d2b0-fc2a-441a-b01e-1620e775f82d"
+            name="ChocAnSystem"
+            isActor="false"
+            lifelineDisplayName="ChocAnSystem">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="df955749-60fa-4f01-8a34-22845e7142f3"
+                LastKnownName="MessageOccurrenceSpecification41"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="e4226a9e-ff71-405a-abd4-3f5db501d882"
+                LastKnownName="MessageOccurrenceSpecification44"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="f1d4c434-ec71-463e-8a51-615668f96f48"
+            name="ReportingService"
+            isActor="false"
+            lifelineDisplayName="ReportingService">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="a5977f49-ef81-4a94-bb28-176fdc1f8008"
+                LastKnownName="ExecutionOccurrenceSpecification25"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="53e1cfbd-044c-45ab-8058-513e80ec05a4"
+                LastKnownName="ExecutionOccurrenceSpecification26"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="b0fb7327-10b7-4320-9f3a-a5fd4038637b"
+            name="ActiveMemberReport"
+            isActor="false"
+            lifelineDisplayName="ActiveMemberReport">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="2732fe4b-65cf-42f1-a435-c15c557f1927"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="1edd56d3-0132-4166-bd4c-7876ecf041f1"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="20249239-5071-4b80-b22f-e18819cab16a"
+            name="ActiveProviderReport"
+            isActor="false"
+            lifelineDisplayName="ActiveProviderReport">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="cc1f4a56-a785-46ed-bd10-633bf4420323"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="04da31c7-862c-4137-90e0-edf06f89b545"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="a88e6d8f-95db-4a1f-a2ff-0340b6b38574"
+            name="ProviderSummaryReport"
+            isActor="false"
+            lifelineDisplayName="ProviderSummaryReport">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="d079c9d7-1261-4746-972c-9b09d3dec630"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="e1a0147f-f6ef-4626-96e7-f50d667c25c7"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="3851406a-2c66-4dc0-b807-1b3824f1cc59"
+            name="1. Run the weekly set of reports"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="df955749-60fa-4f01-8a34-22845e7142f3"
+                LastKnownName="MessageOccurrenceSpecification41"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="3615572f-8f74-461e-a60a-c2dadf86cab2"
+                LastKnownName="MessageOccurrenceSpecification42"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="e2dd7cc2-433f-40cb-8f99-7c0044f22ac9"
+            name="2. Request Active Member Reports"
+            messageKind="Complete"
+            messageSort="CreateMessage"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f395599f-f575-430e-8d4a-7510d609815e"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="993bf0c8-160e-458a-a7fa-fa5430c32e90"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="393f8169-6285-4c88-bab4-1890b47e2a8f"
+            name="3. Return Active Member Reports"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8352f8f7-c7bb-437f-8d47-8a27fd7a608f"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="04d08948-f8ac-429b-801c-789ed9f4a099"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="3d28edca-8097-48b0-8134-817579facbfb"
+            name="4. Email a report to each member, log errors"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0ff629a4-1d54-4613-a00a-49cf4748df0b"
+                LastKnownName="MessageOccurrenceSpecification51"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d84fc289-89b5-43bc-aedd-047544bab1ac"
+                LastKnownName="MessageOccurrenceSpecification52"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="5042ddcd-afdd-4e60-a1e7-b65ca085ff79"
+            name="5. Request Active Provider Report"
+            messageKind="Complete"
+            messageSort="CreateMessage"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="3958675d-28bd-44ba-8933-9d5b5cac67a8"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ecdd6023-570f-4903-89ce-1e8010a12e6c"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="00915a34-0266-4736-a8db-ae3b8cddfbf5"
+            name="6. Return Active Provider Report"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="2c9e90dd-ddd3-44ff-829b-f55f6ef058d3"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="795b634b-0e73-42b6-98a8-6989c05ae350"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="83e5666d-b5af-45d7-b997-7fb8fc237e18"
+            name="7. Email Each Provider, log errors"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1d475e46-eac7-409b-a301-cca915a711eb"
+                LastKnownName="MessageOccurrenceSpecification55"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6480b241-8257-4c87-816f-fede9e727717"
+                LastKnownName="MessageOccurrenceSpecification56"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="f1705686-675b-4bf2-ac31-f2fa1df63b44"
+            name="8. Run Summary Report"
+            messageKind="Complete"
+            messageSort="CreateMessage"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0a964d4b-ce1a-4184-9d05-f9bd676c9f6f"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a2fc4a4b-3eb3-4468-a9a9-3006bbf64215"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="d97e5b02-7a19-47ca-b15b-6ceb70d37ce7"
+            name="9. Return Summary Report"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="2434ce51-f221-4a4b-9474-8b06891f780f"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="863abaaa-235c-4adf-80f4-656ed386d682"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="1c43476f-5504-4232-bc58-ecf39664bc75"
+            name="10. Email Summary report to  Accounts Payable Manager, log errors"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="cdaa5169-baec-44dc-a27c-cbabfd5e47f1"
+                LastKnownName="MessageOccurrenceSpecification49"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="98c03909-4ff3-466c-a3a8-699b9cb28582"
+                LastKnownName="MessageOccurrenceSpecification50"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="693e59fd-3378-4da9-a253-8d8fd7adecdc"
+            name="11. Return error logs to save to disk"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8607edcb-a3ca-43b8-85b5-798f2d3086f6"
+                LastKnownName="MessageOccurrenceSpecification43"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e4226a9e-ff71-405a-abd4-3f5db501d882"
+                LastKnownName="MessageOccurrenceSpecification44"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ef580c55-aa1e-4df7-944b-43cc98f42271"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="9da28a64-9fdc-4b91-9268-ccf98849ff28"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="06de1dba-cdf0-454b-abc0-36051a5d6d4f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="98d9f541-7296-47e8-9593-9a629dfc51e9"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="878441a4-149a-42b0-8617-285066e5f27d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="271c8e24-8489-40fb-b875-aede0e05e385"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="90ebc967-e6af-43bd-924e-7f3b0c3d7d70"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d8a41986-475d-4e5d-8605-213db367c0c0"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="5c888fc0-68d4-482b-a6e3-38c1e4f48767"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="43e01808-0c93-41be-9e05-3ba2b3667d20"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="97477dfe-afda-431d-bc87-509bf424fea4"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b7ec1175-8c0a-4e8c-b84a-c73a8e3205aa"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="cc6a0f40-bfd2-45d0-9e37-73da26ecb058"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c7752cfd-288b-4b53-8bf7-47549a7e3305"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="027138f4-1a51-49c2-bf5e-f3b5b8b926e0"
+        name="UC6 - Verify Provider Number"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="3ff1ca9e-b1f4-4ced-80e8-41ed9665f31b"
+            LastKnownName="ChocAn Data Center Application"
+            LastKnownLocation="Chocoholics.Design.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5c06680e-04c9-4a3a-993e-c86c9535fca9"
+        name="Class1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="351beb48-d8ac-4987-9002-53ef0e3cd5db"
+        name="Class2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="e6c79046-3e94-4b2b-b792-7802fb41c6b2"
+        name="RunWeeklyReports2"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="d5ba0bc6-17f0-4dd3-9ec7-8e7ff6211d50"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="464ff5db-ae91-48ce-887e-7a77ed7b8e7b"
+                LastKnownName="ActiveMemberReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="57756c1e-7b58-4e96-a385-4bcb32933793"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="1ad035c0-618c-484d-aedf-471c90b2793f"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="2d16e244-43df-4882-a142-04328809247b"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="2f2128e7-6bfb-42c3-9043-a22e4db41e9f"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="1ad035c0-618c-484d-aedf-471c90b2793f"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e55ef461-28fc-4718-93a7-a3aa8cc7732e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Chocoholics.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="464ff5db-ae91-48ce-887e-7a77ed7b8e7b"
+                LastKnownName="ActiveMemberReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="fe3c1af2-85b4-4349-b7d9-960e336cb409"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="4ed62cdf-833b-4490-ac7c-5403927da7f3"
+                LastKnownName="frmReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2d16e244-43df-4882-a142-04328809247b"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="464ff5db-ae91-48ce-887e-7a77ed7b8e7b"
+                LastKnownName="ActiveMemberReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2f2128e7-6bfb-42c3-9043-a22e4db41e9f"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="464ff5db-ae91-48ce-887e-7a77ed7b8e7b"
+                LastKnownName="ActiveMemberReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="015f34be-4270-4e85-b3eb-33c87f77fb14"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="4ed62cdf-833b-4490-ac7c-5403927da7f3"
+                LastKnownName="frmReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="57756c1e-7b58-4e96-a385-4bcb32933793"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="dea2a867-04db-42a0-a557-1196fe651151"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Chocoholics.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="464ff5db-ae91-48ce-887e-7a77ed7b8e7b"
+                LastKnownName="ActiveMemberReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="b8d09d82-5191-43e4-abcb-6d1b85a2ac28"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="877ca6b8-68b8-4541-b2ac-6d3dc9ec996b"
+                LastKnownName="ActiveProviderReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="c2f434f4-0fd8-49c5-a96d-61d429187301"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="0c439b00-2274-4b77-aa8e-25c5e994a21f"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="49c0577b-0949-4590-b81f-a54526471321"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="86d0db31-ed5d-40d7-a894-f353485de15d"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="0c439b00-2274-4b77-aa8e-25c5e994a21f"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ec9e6ab0-c836-44ab-abc5-d492fa08f421"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Chocoholics.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="877ca6b8-68b8-4541-b2ac-6d3dc9ec996b"
+                LastKnownName="ActiveProviderReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="49c0577b-0949-4590-b81f-a54526471321"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="877ca6b8-68b8-4541-b2ac-6d3dc9ec996b"
+                LastKnownName="ActiveProviderReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7b620422-1e9a-4c2b-b6e1-9739b6dc129a"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="4ed62cdf-833b-4490-ac7c-5403927da7f3"
+                LastKnownName="frmReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="86d0db31-ed5d-40d7-a894-f353485de15d"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="877ca6b8-68b8-4541-b2ac-6d3dc9ec996b"
+                LastKnownName="ActiveProviderReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2c343cde-7f74-4343-801c-6b8af50f400e"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="4ed62cdf-833b-4490-ac7c-5403927da7f3"
+                LastKnownName="frmReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="c2f434f4-0fd8-49c5-a96d-61d429187301"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="cdea0eee-28a3-4f3b-8fc8-8422a1b44990"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Chocoholics.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="877ca6b8-68b8-4541-b2ac-6d3dc9ec996b"
+                LastKnownName="ActiveProviderReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="21581d24-f4e3-4023-b985-6cfedac404b2"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="5d76c5fc-1d6e-4aea-9d0c-96bd6013bc95"
+                LastKnownName="EFTReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="151d8999-b456-4ccd-9559-fbd8582753e5"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="853e1abe-bf87-4867-8d6d-177fffdcf672"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="a98033ba-c3f2-4f00-a660-9511dc3def1c"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="4a63e83a-5cef-4b90-a8a9-044d5bce7f68"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="853e1abe-bf87-4867-8d6d-177fffdcf672"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="4d3d57eb-1e59-4dbd-959c-e304677abe44"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Chocoholics.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5d76c5fc-1d6e-4aea-9d0c-96bd6013bc95"
+                LastKnownName="EFTReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="3480bee3-37f4-44c2-b45d-c0dc0ef672d5"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="4ed62cdf-833b-4490-ac7c-5403927da7f3"
+                LastKnownName="frmReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a98033ba-c3f2-4f00-a660-9511dc3def1c"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="5d76c5fc-1d6e-4aea-9d0c-96bd6013bc95"
+                LastKnownName="EFTReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="4a63e83a-5cef-4b90-a8a9-044d5bce7f68"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="5d76c5fc-1d6e-4aea-9d0c-96bd6013bc95"
+                LastKnownName="EFTReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="90f36a63-5708-4cd5-8937-1b4eee3a16b9"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="4ed62cdf-833b-4490-ac7c-5403927da7f3"
+                LastKnownName="frmReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="151d8999-b456-4ccd-9559-fbd8582753e5"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="5d64719a-01e7-467e-8bc5-9c308b2badea"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Chocoholics.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5d76c5fc-1d6e-4aea-9d0c-96bd6013bc95"
+                LastKnownName="EFTReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="cf1ce654-f6bc-42a7-9e43-aaa73b56b00f"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="a0d38095-c136-40e7-872b-30cffffe71a6"
+                LastKnownName="ServicesDirectoryReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="2c7b47b7-ac3f-456b-a5a9-0e9b4bb2d1ce"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="69d0143a-9bb5-4578-ab3a-a3a0c821d02f"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="1d972e69-8ab7-4a6f-a7b0-3b96401a1b6d"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="822b8f7b-82a3-4aa2-b067-839f90ab9de0"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="69d0143a-9bb5-4578-ab3a-a3a0c821d02f"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="04d7cc93-ade4-4420-adc2-bcd9a0c1c6ba"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Chocoholics.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a0d38095-c136-40e7-872b-30cffffe71a6"
+                LastKnownName="ServicesDirectoryReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="34d16323-59ba-4c51-b57d-4a8760be44d4"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="4ed62cdf-833b-4490-ac7c-5403927da7f3"
+                LastKnownName="frmReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1d972e69-8ab7-4a6f-a7b0-3b96401a1b6d"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="a0d38095-c136-40e7-872b-30cffffe71a6"
+                LastKnownName="ServicesDirectoryReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="822b8f7b-82a3-4aa2-b067-839f90ab9de0"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="a0d38095-c136-40e7-872b-30cffffe71a6"
+                LastKnownName="ServicesDirectoryReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a05d776a-03f6-4d99-8f12-794a8f28ac68"
+            name="MessageOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="4ed62cdf-833b-4490-ac7c-5403927da7f3"
+                LastKnownName="frmReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="2c7b47b7-ac3f-456b-a5a9-0e9b4bb2d1ce"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="22a6c7b5-e148-4b61-bbf1-caff64e499a4"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Chocoholics.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a0d38095-c136-40e7-872b-30cffffe71a6"
+                LastKnownName="ServicesDirectoryReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="22c8d940-96fb-495e-a8c5-fa26fb631c8a"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="9efb4404-2b1f-4ed7-87df-e2399b67b768"
+                LastKnownName="ChocAnSummaryReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="2accd534-38a5-400c-a47d-db24edc36332"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="4b02fc21-7353-45d0-9d3e-a8072f95c59f"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="29c4b9eb-2913-4fe0-84f3-695472facff6"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="10788f56-4d83-44b7-be17-6bd7a3bb88cf"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="4b02fc21-7353-45d0-9d3e-a8072f95c59f"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="7d1a0c7c-251c-4fd4-a5ed-9420cf72b0d5"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Chocoholics.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="9efb4404-2b1f-4ed7-87df-e2399b67b768"
+                LastKnownName="ChocAnSummaryReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="33bc7a6c-c175-4f9e-9784-68b842e949a6"
+            name="MessageOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="4ed62cdf-833b-4490-ac7c-5403927da7f3"
+                LastKnownName="frmReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="29c4b9eb-2913-4fe0-84f3-695472facff6"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="9efb4404-2b1f-4ed7-87df-e2399b67b768"
+                LastKnownName="ChocAnSummaryReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2cfd437a-49f5-4f8b-ad17-904f76decca5"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="4ed62cdf-833b-4490-ac7c-5403927da7f3"
+                LastKnownName="frmReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="10788f56-4d83-44b7-be17-6bd7a3bb88cf"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="9efb4404-2b1f-4ed7-87df-e2399b67b768"
+                LastKnownName="ChocAnSummaryReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="2accd534-38a5-400c-a47d-db24edc36332"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="cf49aba5-f622-4a23-bc6b-0bcddded4d97"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Chocoholics.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="9efb4404-2b1f-4ed7-87df-e2399b67b768"
+                LastKnownName="ChocAnSummaryReport"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="4ed62cdf-833b-4490-ac7c-5403927da7f3"
+            name="frmReport"
+            isActor="false"
+            lifelineDisplayName="frmReport">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="fe3c1af2-85b4-4349-b7d9-960e336cb409"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="015f34be-4270-4e85-b3eb-33c87f77fb14"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="7b620422-1e9a-4c2b-b6e1-9739b6dc129a"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="2c343cde-7f74-4343-801c-6b8af50f400e"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="3480bee3-37f4-44c2-b45d-c0dc0ef672d5"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="90f36a63-5708-4cd5-8937-1b4eee3a16b9"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="34d16323-59ba-4c51-b57d-4a8760be44d4"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="a05d776a-03f6-4d99-8f12-794a8f28ac68"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="33bc7a6c-c175-4f9e-9784-68b842e949a6"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="2cfd437a-49f5-4f8b-ad17-904f76decca5"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="464ff5db-ae91-48ce-887e-7a77ed7b8e7b"
+            name="ActiveMemberReport"
+            isActor="false"
+            lifelineDisplayName="ActiveMemberReport">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="1ad035c0-618c-484d-aedf-471c90b2793f"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="57756c1e-7b58-4e96-a385-4bcb32933793"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="877ca6b8-68b8-4541-b2ac-6d3dc9ec996b"
+            name="ActiveProviderReport"
+            isActor="false"
+            lifelineDisplayName="ActiveProviderReport">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="0c439b00-2274-4b77-aa8e-25c5e994a21f"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="c2f434f4-0fd8-49c5-a96d-61d429187301"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="5d76c5fc-1d6e-4aea-9d0c-96bd6013bc95"
+            name="EFTReport"
+            isActor="false"
+            lifelineDisplayName="EFTReport">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="853e1abe-bf87-4867-8d6d-177fffdcf672"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="151d8999-b456-4ccd-9559-fbd8582753e5"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="a0d38095-c136-40e7-872b-30cffffe71a6"
+            name="ServicesDirectoryReport"
+            isActor="false"
+            lifelineDisplayName="ServicesDirectoryReport">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="69d0143a-9bb5-4578-ab3a-a3a0c821d02f"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="2c7b47b7-ac3f-456b-a5a9-0e9b4bb2d1ce"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="9efb4404-2b1f-4ed7-87df-e2399b67b768"
+            name="ChocAnSummaryReport"
+            isActor="false"
+            lifelineDisplayName="ChocAnSummaryReport">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="4b02fc21-7353-45d0-9d3e-a8072f95c59f"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="Chocoholics.Design.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="2accd534-38a5-400c-a47d-db24edc36332"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="87504d47-6894-47fd-b366-4aa15b19d67d"
+            name="1. RunReport()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="fe3c1af2-85b4-4349-b7d9-960e336cb409"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="2d16e244-43df-4882-a142-04328809247b"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="9a2dcb4b-4e26-4bc6-8540-be9fe3a0d18b"
+            name="2. Store result"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="2f2128e7-6bfb-42c3-9043-a22e4db41e9f"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="015f34be-4270-4e85-b3eb-33c87f77fb14"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="53aacea3-2b61-40fc-b78a-175677422044"
+            name="3. RunReport()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7b620422-1e9a-4c2b-b6e1-9739b6dc129a"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="49c0577b-0949-4590-b81f-a54526471321"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="770987a0-148a-45ab-82c2-358ddb7dbc46"
+            name="4. Store result"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="86d0db31-ed5d-40d7-a894-f353485de15d"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="2c343cde-7f74-4343-801c-6b8af50f400e"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="46a14d57-7575-4b7c-99cc-f54bf7bc9cf2"
+            name="5. RunReport()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="3480bee3-37f4-44c2-b45d-c0dc0ef672d5"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a98033ba-c3f2-4f00-a660-9511dc3def1c"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="d7a41cfe-d729-4c75-bfd1-2cdc5bb9cefa"
+            name="6. Store result"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="4a63e83a-5cef-4b90-a8a9-044d5bce7f68"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="90f36a63-5708-4cd5-8937-1b4eee3a16b9"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="be19e04b-6799-4525-9690-4be08da0b649"
+            name="7. RunReport()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="34d16323-59ba-4c51-b57d-4a8760be44d4"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1d972e69-8ab7-4a6f-a7b0-3b96401a1b6d"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="d446c249-0a3b-4e49-bbe3-75e607f73455"
+            name="8. Store result"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="822b8f7b-82a3-4aa2-b067-839f90ab9de0"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a05d776a-03f6-4d99-8f12-794a8f28ac68"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="81556621-6d7f-4915-85d5-84fa9a3ac124"
+            name="9. RunReport()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="33bc7a6c-c175-4f9e-9784-68b842e949a6"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="29c4b9eb-2913-4fe0-84f3-695472facff6"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="45110191-fd8d-4305-86c0-47f277ab3efe"
+            name="10. Store and display final result"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="10788f56-4d83-44b7-be17-6bd7a3bb88cf"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="2cfd437a-49f5-4f8b-ad17-904f76decca5"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="Chocoholics.Design.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e55ef461-28fc-4718-93a7-a3aa8cc7732e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="dea2a867-04db-42a0-a557-1196fe651151"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ec9e6ab0-c836-44ab-abc5-d492fa08f421"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="cdea0eee-28a3-4f3b-8fc8-8422a1b44990"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="4d3d57eb-1e59-4dbd-959c-e304677abe44"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="5d64719a-01e7-467e-8bc5-9c308b2badea"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="04d7cc93-ade4-4420-adc2-bcd9a0c1c6ba"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="22a6c7b5-e148-4b61-bbf1-caff64e499a4"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="7d1a0c7c-251c-4fd4-a5ed-9420cf72b0d5"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="cf49aba5-f622-4a23-bc6b-0bcddded4d97"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

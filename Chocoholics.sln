@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Chocoholics.Design", "Chocoholics.Design\Chocoholics.Design.modelproj", "{4C636C22-BD8C-4CA2-8C4C-73FF42D2A79D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChocoholicsTests", "ChocoholicsTests\ChocoholicsTests.csproj", "{46483233-4E78-4957-A64B-C9E0434F3AA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chocoholics", "Chocoholics\Chocoholics.csproj", "{7EB30097-5E9C-4714-A093-DC06969A802E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chocoholics.Ui", "Chocoholics.Ui\Chocoholics.Ui.csproj", "{B68D53FF-8679-467A-AB03-3E08D170063F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7EB30097-5E9C-4714-A093-DC06969A802E} = {7EB30097-5E9C-4714-A093-DC06969A802E}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://csc640-team1.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Chocoholics.Design\\Chocoholics.Design.modelproj
+		SccProjectName1 = Chocoholics.Design
+		SccLocalPath1 = Chocoholics.Design
+		SccProjectUniqueName2 = ChocoholicsTests\\ChocoholicsTests.csproj
+		SccProjectName2 = ChocoholicsTests
+		SccLocalPath2 = ChocoholicsTests
+		SccProjectUniqueName3 = Chocoholics\\Chocoholics.csproj
+		SccProjectName3 = Chocoholics
+		SccLocalPath3 = Chocoholics
+		SccProjectUniqueName4 = Chocoholics.Ui\\Chocoholics.Ui.csproj
+		SccProjectName4 = Chocoholics.Ui
+		SccLocalPath4 = Chocoholics.Ui
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C636C22-BD8C-4CA2-8C4C-73FF42D2A79D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C636C22-BD8C-4CA2-8C4C-73FF42D2A79D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C636C22-BD8C-4CA2-8C4C-73FF42D2A79D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C636C22-BD8C-4CA2-8C4C-73FF42D2A79D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46483233-4E78-4957-A64B-C9E0434F3AA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46483233-4E78-4957-A64B-C9E0434F3AA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46483233-4E78-4957-A64B-C9E0434F3AA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46483233-4E78-4957-A64B-C9E0434F3AA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EB30097-5E9C-4714-A093-DC06969A802E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EB30097-5E9C-4714-A093-DC06969A802E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EB30097-5E9C-4714-A093-DC06969A802E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EB30097-5E9C-4714-A093-DC06969A802E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B68D53FF-8679-467A-AB03-3E08D170063F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B68D53FF-8679-467A-AB03-3E08D170063F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B68D53FF-8679-467A-AB03-3E08D170063F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B68D53FF-8679-467A-AB03-3E08D170063F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
